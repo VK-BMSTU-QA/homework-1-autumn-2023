@@ -38,7 +38,8 @@
   - При клике на кнопку приглашения:
     - При наличии подписок открывается модальное окно приглашения на мероприятие
     - **БАГ** ${\color{red}При \ отсутствии \ подписок \ видим \ пустое \ модальное \ окно}$    
- ![скриншот](screenshots/invite.png)  
+![скриншот](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/invite.png)  
+
 
 ### Модальное окно организатора
 - При нажатии на кнопку "создать мероприятие" пользователем, не являющимся организатором, открывается модальное окно организатора
@@ -46,12 +47,13 @@
 - При нажатии на кнопку "стать организатором" без заполнения поля "Телефон" появляется подсказка "телефон не указан"
 - При заполнении поля "Телефон" невалидными данными (наличие букв, спец. символов) появляется подсказка "Неправильный номер телефона"
 - **БАГ** ${\color{red} При \ заполнении \ поля \ "Телефон" \ номером \ из \ 12 \ цифр, \ форму \ можно \ отправить,\ в \ профиле \ отображается \ номер \ телефона \ из \ 12 \ цифр}$    
-![phone](./screenshots/phone_format.png)
+![phone](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/phone_format.png)
   
+
 ### Фильтрация по тегам:
 
 - **БАГ** ${\color{red} Невозможно \ фильтровать \ по \ конкретному \ интересующему \ тегу \, \ если \ его \ нет \ среди \ популярных}$    
-![no tag search](./screenshots/no_tag_search.png)
+![no tag search](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/no_tag_search.png)
 - При выборе хотя бы одного тега, принадлежашего мероприятию, мероприятие отображается на странице.
 - При выборе одного или нескольких тегов не принадлежащих мероприятию, мероприятие не отображается на странице.
 - Если не выбран ни один тег, отображаются все мероприятия.
@@ -74,15 +76,15 @@
 
 ### Фильтрация по датам:
 - **БАГ** ${\color{red} На \ календаре \ никак \ не \ выделяется \ текущая \ дата}$    
-![calendar no now date](./screenshots/calendar_no_now_date.png)
+![calendar no now date](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/calendar_no_now_date.png)
 
 - При выборе одной даты на календаре она выделяется
 - При выборе двух дат одного месяца на календаре выделяется интверал дат между ними.
 - **БАГ** ${\color{red} При \ выборе \ двух \ дат \ разных \ месяцев \ на \ календаре \ выделяются \ только \ даты \ выбранного \ месяца}$
 
 Например при выборе интервала 27.11.2023 - 22.12.2023:    
-![calendar diff month first](./screenshots/calendar_diff_month_first.png)
-![calendar diff month second](./screenshots/calendar_diff_month_second.png)
+![calendar diff month first](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/calendar_diff_month_first.png)
+![calendar diff month second](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/calendar_diff_month_second.png)
 
 - **БАГ** ${\color{red} Время \ мероприятие \ отображается \ без \ учета, \ часового \ пояса \ выбранного \ города}$
 - Если не выбрана дата на календаре, не отображаются мероприятия в интервал даты проведения которых не попадает текущая дата
@@ -95,7 +97,7 @@
   
 - Для авторизованного пользователя:
   - **БАГ** ${\color{red}кнопка \ выхода \ из \ профиля \ не \ реагирует \ на \ наведение \ мыши}$    
-![logout](./screenshots/logout_no_hover.png)
+![logout](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/logout_no_hover.png)
   - кнопка выхода из профиля при клике заканчивает сессию, в навбаре вместо аватара, никнейма пользователя и кнопки выхода появляются кнопки регистрации и входа
   - аватарка пользователя и его никнейм реагируют на наведение мыши - курсор становится поинтером, никнейм подчеркивается
   - клик на аватарку или никнейм редиректит на страницу профиля (https://event-radar.ru/profile/{id})
@@ -105,8 +107,8 @@
 - При нажатии на название города, открывается модальное окно выбора города:
   - при клике на любой город модальное окно закрывается, город в навбаре меняется на выбранный
   - город можно найти по подстроке, однако **БАГ** ${\color{red}строка \ поиска \ учитывает \ регистр}$    
-![cities search](screenshots/cities_case.png)
-![cities search lowercase](screenshots/cities_nocase.png)
+![cities search](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/cities_case.png)
+![cities search lowercase](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/cities_nocase.png)
 
 
 ### Модальное окно входа
@@ -135,7 +137,7 @@
   - при вводе некорректного email (отсутствие '@', неподдерживаемые символы) браузер не даёт отправить форму
   - при отсутствии точки показывает сообщение об ошибке с бэка
   - **БАГ** ${\color{red}при \ длине \ почты \ более \ 250 \ символов \ показывает \ Internal \ Server \ Error \ в \ форме, \ без \ пояснений}$    
-![register mail](./screenshots/register_mail.png)
+![register mail](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/register_mail.png)
 
 - Поле ввода пароля:
   - принимает строку из произвольных символы длиной от 5 до 30 символов включительно
@@ -155,8 +157,8 @@
 -  Кнопка входа меняет модальное окно регистрации на окно входа
 
 - **БАГ**${\color{red}При \ наличии \ ошибки \ у \ какого-либо \ из \ полей \ формы, \ при \ исправлении \ этой \ ошибки \ и \ отправке \ формы \ с \ иной \ ошибкой, \ старая \ ошибка \ всё \ так \ же \ отображается}$    
-![register errors 1](./screenshots/register_errors_1.png)
-![register errors 2](./screenshots/register_errors_2.png)
+![register errors 1](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/register_errors_1.png)
+![register errors 2](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/register_errors_2.png)
 
 - При попытке ввести логин или почту уже существующего пользователя отображается ошибка. Что конкретно уже существует, не указано
 
@@ -207,10 +209,10 @@
 
 ## Страничка профиля (https://event-radar.ru/profile/{id})
 - **БАГ** ${\color{red} При \ ширине \ страницы \ \geq \ 1550px \ отсутствует \ отступ \ снизу \ под \ информацией \ о \ профиле }$    
-![recs margin](./screenshots/LM/004_recs_margin.png)
+![recs margin](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/LM/004_recs_margin.png)
 - Подписки
   - **БАГ** ${\color{red} При \ ширине \ страницы \ < \ 1550px \ и \ \geq \ 1250px \ отсутствует \ отступ \ сверху }$        
-![sub margin](./screenshots/LM/001_sub_margin.png)
+![sub margin](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/LM/001_sub_margin.png)
   - Кнопка "Подписки" 
     - Подчеркивается при наведении
     - Курсор меняется на указатель при наведении
@@ -218,11 +220,11 @@
   - При отсутствии подписок 
     - **БАГ** ${\color{red} При \ ширине \ страницы \ < \ 1250px, \ отсутствует \ надпись \ "У \ вас \ нет \ подписок" }$
     - При ширине страницы >= 1250px есть надись "У вас нет подписок"        
-![sub missing](./screenshots/LM/002_sub_missing.png)
+![sub missing](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/LM/002_sub_missing.png)
   - При наличии подписок, они отображаются под кнопкой "Подписки"
     - **БАГ** ${\color{red} Подписки \ не \ выровнены \ по \ центру}$
     - **БАГ** ${\color{red} При \ ширине \ страницы \ < \ 1550px \ и \ \geq \ 1250px \ подписка \ вылезает \ за \ пределы }$    
-![sub extra](./screenshots/LM/005_sub_extra.png)
+![sub extra](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/LM/005_sub_extra.png)
     - Длинные имена обрезаются, что не ломает верстку
     - При наведении на подписку подсвечивается текст и обводится картинка
     - При клике на подписку открывается страница нужного пользователя. [Страница другого пользователя](#страница-другого-профиля)
@@ -248,7 +250,7 @@
 
 ### Профиль другого пользователя (https://event-radar.ru/profile/{other_user_id})
 - **БАГ** ${\color{red} Кнопка \ подписаться \ является \ инпутом \ с \ типом \ текст }$    
-![profile sub](./screenshots/LM/009_profile_sub.png)
+![profile sub](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/LM/009_profile_sub.png)
 - Если не подписаны на пользователя, отображается кнопка "Подписаться"
 - Если подписаны на пользователя, отображается кнопка "Отписаться"
 - При клике на кнопку "Подписаться"
@@ -275,7 +277,7 @@
 - **БАГ** ${\color{red} Не \ выдаются \ ошибки \ при \ любой \ ошибке }$
 - Картинка профиля
   - **БАГ** ${\color{red} Не \ видно \ иконку \ редактирования \ на \ белом \ фоне \ (нет \ обводки) }$    
-![profile img color](./screenshots/LM/007_profile_edit_img_color.png)
+![profile img color](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/LM/007_profile_edit_img_color.png)
   - При наведении 
     - Иконка редактирования меняет цвет
     - Курсор меняется на указатель
@@ -286,7 +288,7 @@
     -**БАГ** ${\color{red} При \ выборе \ формата, \ который \ не \ является \ картинкой, \ отображается \ alt, \ после \ сохранения \ так же \ показыется \ alt }$
     - Если картинка больше 5 МБ, то картинка остается как раньше
     - **БАГ**  ${\color{red} При \ выборе \ формата \ svg \ картика \ отображается \ до \ сохранения, \ после \ сохранения \ она \ исчезает \ и \ показывается \ alt }$    
-![modal card margin](./screenshots/LM/008_profile_edit_img_svg.png) 
+![modal card margin](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/LM/008_profile_edit_img_svg.png) 
 - Имя профиля
   - **БАГ** ${\color{red} В \ имя \ нельзя \ добавить \ пробел }$
   - Имеет ограниченный набор допустимых символов
@@ -322,7 +324,7 @@
 - **БАГ** ${\color{red} При \ отсутствии \ подписок \ не \ пишет \ об \ этом }$
 
 - **БАГ** ${\color{red} Нет \ отступа \ от \ кнопки \ статус \ подписки }$    
-![modal card margin](./screenshots/LM/006_sub_modal_margin.png)
+![modal card margin](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/LM/006_sub_modal_margin.png)
 - Если подписаны на пользователя, его кнопка статуса подписки не активна
 
 - Карточка имеет активную зону на картинке, тексте и кнопке подписаться 
@@ -355,8 +357,8 @@
       - Подписывает на пользователя  
       - Пользователь появляется в подписках в модальном окне
     - **БАГ** ${\color{red} Если \ подписаны \ на \ него, \ то \ ничего \ не \ происходит \ (кнопка \ не \ должна \ быть \ активной) }$    
-![your subs](screenshots/sub_modal_your_profile.png)
-![other user's modal](screenshots/sub_modal_other_profile.png)
+![your subs](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/sub_modal_your_profile.png)
+![other user's modal](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/sub_modal_other_profile.png)
 
 ## Создание мероприятия (https://event-radar.ru/createevent)
 - При заполнении на странице создания мероприятия полей следующим образом:
@@ -398,8 +400,8 @@
     - Мероприятие не создаётся
     - **БАГ** ${\color{red} Отображается \ ошибка \ Internal \ server \ error }$
     - **БАГ** ${\color{red} При \ вводе \ нескольких \ одинаковых \ тегов, \ все \ они \ отображаются \ на \ странице \ мероприятия}$    
-![tags input](screenshots/tags_input.png)  
-![multiple tags](screenshots/tags_multiple.png)
+![tags input](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/tags_input.png)  
+![multiple tags](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/tags_multiple.png)
 
   - При попытке создания мероприятия с пустым полем тегов
     - Мероприятие создаётся
@@ -491,10 +493,10 @@
 - **БАГ** ${\color{red} На \ карте \ отображаются \ не \ все \ мероприятия \ (В \ качестве \ примера \ мероприятия \ в \ Казани \ и \ Чебоксарах, \ места \ которых \ располагаются \ в \ соответствующих \ городах, \ но \ не \ видны \ на \ общей \ карте)}$
 
 Глобальная карта:
-![no events global map](./screenshots/no_events_global_map.png)
+![no events global map](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/no_events_global_map.png)
 Карта в карточках событий:
-![lost event page kazan](./screenshots/lost_event_page_kazan.png)
-![lost event page Cheb](./screenshots/lost_event_page_Cheb.png)
+![lost event page kazan](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/lost_event_page_kazan.png)
+![lost event page Cheb](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/lost_event_page_Cheb.png)
 
 
 ## Сброс фильтров:
@@ -502,7 +504,7 @@
 ### На странице со всеми мероприятиями (https://event-radar.ru/eventslist)
 - Если строка поиска пустая, то при нажатии кнопки "Сбросить фильтры" убираются подсвеченные выбранными теги, категории и даты, и отображаются все мероприятия.
 - **БАГ** ${\color{red} Если \ строка \ поиска \ не \ пустая, \ то \ при \ нажатии \ кнопки \ Сбросить \ фильтры \ строка \ поиска \ не \ изменяется, \ и \ ее \ нельзя \ снова \ активировать}$    
-![search string persist](./screenshots/search_string_persist.png)
+![search string persist](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/search_string_persist.png)
 
 ### На главной странице (https://event-radar.ru)
 
@@ -512,5 +514,5 @@
 
 - При выходе нажатием на одну из категорий сбрасываются старые фильтры и применяется фильтр выбранной категории
 - **БАГ** ${\color{red} При \ выходе \ нажатием \ на \ логотип \ сервиса, \ сбрасываются \ все \ фильтры }$    
-![logo filter 1](./screenshots/logo_filters_1.png)
-![logo filter 2](./screenshots/logo_filters_2.png)
+![logo filter 1](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/logo_filters_1.png)
+![logo filter 2](https://github.com/mihaillatyshov/homework-1-autumn-2023/raw/Wild_Spirits/screenshots/logo_filters_2.png)
